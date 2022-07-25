@@ -33,16 +33,7 @@ func (bw *BufferWriter) String() string {
 }
 
 func (bw *BufferWriter) Write(formatLog []byte) error {
-	var err error
-	var n int
-	writeLen := 0
-	for writeLen < len(formatLog) {
-		n, err = bw.buff.Write(formatLog[writeLen:])
-		if err != nil {
-			return err
-		}
-		writeLen += n
-	}
+	_, err := bw.buff.Write(formatLog)
 	return err
 }
 

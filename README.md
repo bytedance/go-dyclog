@@ -14,7 +14,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/bytedance/dyclog"
+	"github.com/bytedance/go-dyclog"
 )
 
 func main() {
@@ -83,18 +83,18 @@ func Close() error
 *****以下两种方式默认使用ConsoleWriter，通过stdout输出日志*****
 ```go
 // 第一种使用方式
-import "github.com/bytedance/dyclog"
+import "github.com/bytedance/go-dyclog"
 
 func func main() {
-    dyclog.Debug("test dyclog!")
-    dyclog.CtxDebug(context.Background(), "test dyclog!")
+    dyclog.Debug("test go-dyclog!")
+    dyclog.CtxDebug(context.Background(), "test go-dyclog!")
     _ = dyclog.Close()
 }
 ```
 
 ```go
 // 第二种使用方式
-import "github.com/bytedance/dyclog"
+import "github.com/bytedance/go-dyclog"
 
 var Logger *dyclog.Logger
 
@@ -102,8 +102,8 @@ func init() {
     Logger = NewDefaultLogger()
 }
 func func main() {
-    Logger.Debug("test dyclog!")
-    Logger.CtxDebug(context.Background(), "test dyclog!")
+    Logger.Debug("test go-dyclog!")
+    Logger.CtxDebug(context.Background(), "test go-dyclog!")
     _ = Logger.Close()
 }
 ```
@@ -111,7 +111,7 @@ func func main() {
 *****以下案例使用FileWriter写入日志文件，抖音云暂时不支持文件日志收集，敬请期待*****
 ```go
 
-import "github.com/bytedance/dyclog"
+import "github.com/bytedance/go-dyclog"
 
 var Logger *dyclog.Logger
 
@@ -121,8 +121,8 @@ func init() {
 }
 
 func func main() {
-    Logger.Debug("test dyclog!")
-    Logger.CtxDebug(context.Background(), "test dyclog!")
+    Logger.Debug("test go-dyclog!")
+    Logger.CtxDebug(context.Background(), "test go-dyclog!")
     _ = Logger.Close()
 }
 
