@@ -1,6 +1,6 @@
 ## Overview
 
-The go-dyclog SDK provides simple log APIs for douyincloud mini program
+The go-dyclog SDK provides simple log APIs for douyincloud developer
 
 ## How It Works
 ```go
