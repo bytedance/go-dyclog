@@ -1,4 +1,4 @@
-module code.byted.org/douyincloud-open/dyclog
+module github.com/bytedance/dyclog
 
 go 1.17
 

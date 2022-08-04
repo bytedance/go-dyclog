@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"time"
 
-	"code.byted.org/douyincloud-open/dyclog"
+	"github.com/bytedance/dyclog"
 )
 
 func main() {
