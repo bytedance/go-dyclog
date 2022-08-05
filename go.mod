@@ -1,4 +1,4 @@
-module github.com/bytedance/dyclog
+module github.com/bytedance/go-dyclog
 
 go 1.17
 

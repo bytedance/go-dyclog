@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/bytedance/dyclog"
+	"github.com/bytedance/go-dyclog"
 )
 
 func main() {
